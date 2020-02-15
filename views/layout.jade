@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script.
+      window.secret = '!{JSON.stringify(myVar)}';
+      alert(window.secret);
+  body
+    block content
